@@ -1,0 +1,14 @@
+h1. Bueda PHP Client Library
+
+This PHP library can be used to access the Bueda API. The library requires an API key from http://bueda.com.
+
+The Bueda API allows you to send in tags and get back normalized tags, clean tags, semantic tags and categories.
+
+h2. Usage
+
+<pre>
+include 'BuedaRequest.php'; 
+$client = new BuedaRequest('vEmEfeiUADwfTP67Cjftq1w91hIJ8hrlY6L8eQ');
+$client.add("apple,orange,banana");
+echo $client.execute();
+</pre>
